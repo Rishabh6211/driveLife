@@ -1,9 +1,7 @@
-import logo from './logo.svg';
+
 import './App.css';
-import { Grid,Container } from '@mui/material';
-import { styled } from '@mui/material/styles';
-import Box from '@mui/material/Box';
-import Paper from '@mui/material/Paper';
+import { Grid } from '@mui/material';
+
 
 
 function App() {
@@ -14,7 +12,7 @@ function App() {
       <Grid container direction="row" className='App-header' md>
      
   <Grid xs={1} >
-  <img className='App-logo' src='https://clipart-library.com/images/rcLonXkKi.png'  />
+  <img alt="logo" className='App-logo' src='https://clipart-library.com/images/rcLonXkKi.png'  />
   </Grid>
   <Grid xs={4}/>
    

@@ -35,6 +35,17 @@
   border-width: 0vb;
   font-weight: bold;
   cursor: pointer;
+  transition: opacity 0.2s,
+  box-shadow 0.2s;
+}
+
+.App-sigin:hover {
+  opacity: 0.8;
+  box-shadow: 2px 2px 2px rgb(145, 116, 20);
+}
+
+.App-sigin:active {
+  opacity: 0.6 ;
 }
 .App-sigUp {
   background-color: #f5f1ed;
@@ -47,8 +58,17 @@
   border-width: 0vb;
   font-weight: bold;
   cursor: pointer;
+  transition: background-color 0.3s;
 }
 
+.App-sigUp:hover {
+  background-color: #fbae61;
+  color: #f5f1ed;
+}
+.App-sigUp:active {
+  background-color: #61dafb;
+  color: #f5f1ed;
+}
 
 .section1 {
   background-color: #342e28;
