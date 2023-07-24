@@ -8,7 +8,7 @@ const Header = () => {
       <div className="logo-section">
         {/* Add your logo image here */}
         <img src="https://clipart-library.com/images/rcLonXkKi.png" alt="Logo" className="logo" />
-        <span className="app-name">DriveLife</span>
+        <span className="app-name">FindGuide</span>
       </div>
 
       {/* Middle Section */}
