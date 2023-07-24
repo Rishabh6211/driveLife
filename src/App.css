@@ -2,15 +2,146 @@
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
 
 .App-header {
-  height: 12vmin;
+  top: 0px;
+  left: 0px;
+  right: 0px;
+  position: fixed;
+  height: 70px;
   background-color: #282c34;
+  display: flex;
+  flex-direction: row;
  /* max-width: '100%'; */
+}
+
+.Left-header {
+  display: flex;
+  width: 350px;
+  justify-content: center;
+  align-items: center;
+  margin-right: 100px;
+
+}
+
+@media (max-width : 450px) {
+  .Left-header {
+    width: 300px;
+    margin-right: 20px;
+    
+  }
+  .App-logo {
+    margin-right: 0px;
+  }
+  .LeftHeader-text{
+    font-size: 2px;
+  
+  }
+  .Mid-header {
+   width: 300px;
+   
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 10px;
+   
+  
+  }
+
+ 
+  .App-header {
+    top: 0px;
+    left: 0px;
+    right: 0px;
+    position: fixed;
+    height: 18vmin;
+    background-color: #282c34;
+    display: flex;
+    flex-direction: row;
+   /* max-width: '100%'; */
+  }
+
+ 
+ 
+}
+
+@media (max-width:500px) {
+  .App-bodySection{
+    display: grid;
+    grid-template-columns: auto auto ;
+    margin-top: 24vmin;
+    column-gap: 10px;
+    row-gap:20px ;
+    margin-left: 10px;
+    margin-right: 10px;
+   
+    
+  }
+}
+.LeftHeader-text{
+  margin-left: 10px;
+  font-size: x-large;
+  color: #c8823d;
+}
+
+.Mid-header {
+  max-width: 600px;
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+}
+
+.App-search {
+  height: 38px;
+  /* width:300px; */
+  flex: 1;
+  box-shadow: inset 1px 1px 3px rgb(156, 156, 156);
+  /* border-radius: 30px; */
+  border-width: 0px; 
+  border-color: #6e6e6e;
+  /* width: 0; */
+}
+
+.Seach-icon {
+  height: 20px;
+  /* width: 30px;  */
+  /* border-radius: 30px;
+  border-width: 0px; */
+
+}
+
+.App-search::placeholder {
+  font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-size:large;
+  padding-left: 10px;
+}
+
+.Search-button {
+  height: 40px;
+  width: 60px;
+  margin-left: 0px;
+  border-color: #6e6e6e;
+  border-width: 0px; 
+  background-color: white;
+  box-shadow: inset 1px 1px 3px rgb(156, 156, 156);
+ transition: opacity 0.3s;
+  /* padding-right: 5px; */
+}
+
+.Search-button:active {
+  opacity: 0.8;
+}
+
+.Right-header {
+  width: 350px;
+  margin-left: 120px;
+  display: flex;
+  /* flex:1; */
+  /* flex-direction: row; */
+  justify-content: center;
+  align-items: center;
 }
 .App-text {
   font-size: xx-large;
@@ -26,9 +157,11 @@
 }
 .App-sigin {
   background-color: #fbae61;
-  margin-top: 5vmin;
-  height: 6vmin;
-  width: 6vmax;
+  margin-right: 10px;
+  padding-left: 30px;
+  padding-right: 30px;
+  padding-top: 13px;
+  padding-bottom: 13px;
   border-radius: 3vb;
   color: rgb(16, 67, 111);
   border-color: #282c34;
@@ -49,16 +182,19 @@
 }
 .App-sigUp {
   background-color: #f5f1ed;
-  margin-top: 5vmin;
-  height: 6vmin;
-  width: 6vmax;
+ margin-left: 10px;
+ padding-left: 30px;
+ padding-right: 30px;
+ padding-top: 13px;
+ padding-bottom: 13px;
+  /* width: 6vmax; */
   border-radius: 3vb;
   color: rgb(16, 67, 111);
   border-color: #282c34;
   border-width: 0vb;
   font-weight: bold;
   cursor: pointer;
-  transition: background-color 0.3s;
+  transition: background-color 0.3s , opacity 0.3s;
 }
 
 .App-sigUp:hover {
@@ -66,28 +202,43 @@
   color: #f5f1ed;
 }
 .App-sigUp:active {
-  background-color: #61dafb;
+  background-color: #fbae61;
   color: #f5f1ed;
+  opacity: 0.6;
 }
 
-.section1 {
-  background-color: #342e28;
-  
-}
+
 
 .App-logo {
   height: 10vmin;
   width: 100;
 
 }
-.grid-container {
-  display: grid;
-  grid-template-columns: auto auto auto auto;
-  /* gap: 10px; */
-  /* background-color: #2196F3; */
-  /* padding: 10px; */
-}
 
+.App-bodySection{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  margin-top: 80px;
+  column-gap: 20px;
+  row-gap:20px ;
+  margin-left: 10px;
+  margin-right: 10px;
+ 
+  
+}
+.grid1 {
+  background-color: #c8823d;
+  height: 300px;
+  width: auto;
+}
+.grid2 {
+  background-color: #3dc8c8;
+  height: 300px;
+}
+.grid3 {
+  background-color: #c8823d;
+  height: 300px;
+}
 
 /* @media (prefers-reduced-motion: no-preference) {
   .App-logo {
@@ -105,16 +256,52 @@
   font-size: calc(10px + 2vmin);
   color: white;
 } */
-
-.App-link {
-  color: #61dafb;
+.Grid-image {
+ 
+  object-fit: cover;
+  
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
+/* chatgpt */
+
+.main-content {
+  padding: 20px;
+  margin-top: 10vmin;
+}
+
+/* Define the CSS grid layout */
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); /* 3 columns with equal width */
+  grid-template-rows: repeat(2, 1fr); /* 2 rows with equal height */
+  grid-gap: 20px; /* Gap between grid items */
+}
+
+/* Style for each grid item (image and text) */
+.grid-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.grid-item img {
+  max-width: 100%;
+  height: auto;
+  margin-bottom: 10px;
+}
+
+/* Apply the hover effect */
+.grid-item:hover img {
+  border: 2px solid #f00; /* Change the border color or add any other highlight effect */
+}
+/* Example of making the grid responsive */
+@media screen and (max-width: 768px) {
+  .grid-container {
+    grid-template-columns: 1fr; /* 1 column on smaller screens */
+    grid-template-rows: repeat(6, 1fr); /* 6 rows on smaller screens */
   }
 }
+
+/* header */
