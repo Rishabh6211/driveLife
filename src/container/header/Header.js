@@ -1,5 +1,6 @@
 import React from 'react';
 import './Header.css'; // Create a new CSS file for header styles
+import { Link } from 'react-router-dom';
 
 const Header = () => {
   return (
@@ -21,8 +22,16 @@ const Header = () => {
 
       {/* Right Section */}
       <div className="auth-section">
-        <button className="sign-in-button">Sign In</button>
-        <button className="sign-up-button">Sign Up</button>
+      <Link to="/signin">
+        <button className="sign-in-button">
+          Sign In
+          </button>
+      </Link>
+        <Link to="/signup">
+          <button className="sign-up-button">
+            Sign Up
+          </button>
+        </Link>
       </div>
     </header>
   );

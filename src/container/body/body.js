@@ -1,6 +1,7 @@
 import React from 'react';
 import './body.css'; // Create a new CSS file for header styles
 import data from '../../const';
+import { Link } from 'react-router-dom';
 
 const Main = () => {
   return (
@@ -9,8 +10,10 @@ const Main = () => {
    {
     data.map((item) => {
       return (
-        <a href="link_to_image_1_page" className="grid-item">
+        <a href="/image/1" className="grid-item">
+          {/* <Link to="/image/1"> */}
             <img src={item.image} alt="Image 1" />
+            {/* </Link> */}
             <p>{item.cityName}</p>
           </a>
        
